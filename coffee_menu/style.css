@@ -1,0 +1,29 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #30261e; background: #f6f1e9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { max-width: 1000px; padding: 32px 20px; margin: auto; }
+header { margin: 16px 0 30px; }
+.eyebrow { color: #9b6a43; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+h1 { font-size: 46px; margin: 10px 0; }
+header p, .footnote { color: #806e5e; }
+.columns { display: grid; grid-template-columns: 1.25fr 1fr; gap: 22px; align-items: start; }
+.panel { background: #fffdf9; border: 1px solid #e9dfd1; border-radius: 16px; padding: 24px; margin-bottom: 22px; box-shadow: 0 4px 18px #4730180a; }
+h2 { font-size: 21px; margin: 0 0 20px; }
+ul { padding: 0; list-style: none; margin: 0; }
+li { padding: 13px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid #eee6db; }
+li:last-child { border-bottom: 0; }
+.item-actions { display: flex; align-items: center; gap: 7px; }
+button { border: 0; border-radius: 9px; cursor: pointer; padding: 10px 15px; font-weight: 700; font-size: 13px; }
+button:hover { filter: brightness(.94); }
+.add-btn, .primary { background: #65432f; color: white; }
+.remove-btn, .secondary, .qty-btn { background: #eee5da; color: #563c2a; }
+.qty-btn { min-width: 32px; padding: 8px; }
+label { display: block; font-size: 13px; font-weight: 700; margin: 12px 0 6px; }
+input { width: 100%; padding: 12px; border-radius: 9px; border: 1px solid #d6c9bb; background: white; font: inherit; }
+.primary { margin-top: 15px; }
+#error-msg { color: #c0392b; font-size: 13px; min-height: 18px; }
+.total-line { display: flex; justify-content: space-between; border-top: 2px solid #e5d8c9; padding: 18px 0; margin-top: 20px; font-size: 20px; }
+#reward-msg { color: #307348; background: #eaf7e9; border-radius: 9px; padding: 12px; font-weight: 700; }
+.hidden { display: none; }
+.footnote { text-align: center; font-size: 12px; margin-top: 15px; }
+@media (max-width: 680px) { .columns { grid-template-columns: 1fr; } h1 { font-size: 36px; } }

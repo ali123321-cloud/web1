@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header><span class="eyebrow">FRESHLY BREWED</span><h1>Coffee Shop</h1><p>Your favorites, made to order.</p></header>
+    <div class="columns">
+      <div>
+        <section class="panel"><h2>Menu</h2><ul id="menu-list"></ul></section>
+        <section class="panel"><h2>Add a custom item</h2>
+          <label for="item-name">Item name</label><input type="text" id="item-name" placeholder="Item name">
+          <label for="item-price">Price ($)</label><input type="text" id="item-price" placeholder="Price">
+          <button id="add-custom-btn" class="primary">Add to menu</button><p id="error-msg" role="status"></p>
+        </section>
+      </div>
+      <section class="panel cart-panel"><h2>Cart (<span id="cart-count">0</span> items)</h2>
+        <ul id="cart-list"></ul><div class="total-line"><strong>Total</strong><strong>$<span id="cart-total">0.00</span></strong></div>
+        <p id="reward-msg" class="hidden">🍪 Free cookie unlocked!</p>
+        <button id="clear-cart-btn" class="secondary">Clear cart</button>
+      </section>
+    </div>
+    <p class="footnote">Made with vanilla JavaScript</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
