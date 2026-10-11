@@ -22,8 +22,9 @@ label { display: block; font-size: 13px; font-weight: 700; margin: 12px 0 6px; }
 input { width: 100%; padding: 12px; border-radius: 9px; border: 1px solid #d6c9bb; background: white; font: inherit; }
 .primary { margin-top: 15px; }
 #error-msg { color: #c0392b; font-size: 13px; min-height: 18px; }
-.total-line { display: flex; justify-content: space-between; border-top: 2px solid #e5d8c9; padding: 18px 0; margin-top: 20px; font-size: 20px; }
+.total-line { border-top: 2px solid #e5d8c9; padding: 18px 0; margin: 20px 0 0; font-size: 20px; font-weight: 700; }
 #reward-msg { color: #307348; background: #eaf7e9; border-radius: 9px; padding: 12px; font-weight: 700; }
+#reward-msg::before { content: "\1F36A"; margin-right: 6px; }
 .hidden { display: none; }
 .footnote { text-align: center; font-size: 12px; margin-top: 15px; }
 @media (max-width: 680px) { .columns { grid-template-columns: 1fr; } h1 { font-size: 36px; } }

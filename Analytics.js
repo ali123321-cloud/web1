@@ -99,7 +99,8 @@ console.log("All distinct items:", getAllItems(orders));
 console.log("Customers on both days:", bothDays(mondaySet, tuesdaySet));
 console.log("Customers only on Monday:", onlyFirstDay(mondaySet, tuesdaySet));
 console.log("Customers on either day:", allCustomers(mondaySet, tuesdaySet));
-// Tuesday has 4 distinct customers, not 5, because "Lea" appears twice.
+// tuesdayCustomers has 5 entries, but "Lea" appears twice. A Set only stores unique values,
+// so the duplicate "Lea" is kept once and the size is 4, not 5.
 console.log("Distinct Tuesday customers:", tuesdaySet.size);
 // Additional tests for Question 2.
 console.log("Extra test - no orders revenue:", getTotalRevenue([]));
